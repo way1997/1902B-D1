@@ -1,6 +1,247 @@
 body{
     font-family: "微软雅黑";
 }
+/* common */
+.top{
+    width: 100%;
+    height: 92px;
+    background: #ececec;
+
+}
+.top img{
+    margin: 5px auto;
+    display: block
+}
+.top2{
+    width: 100%;
+    height: 35px;
+    position: absolute;
+    background: #f3f3f3;
+}
+.uls{
+    width: 1200px;
+    left: 50%;
+    margin-left: -600px;
+    position: absolute;
+    line-height: 41px;
+}
+li{
+    list-style: none;
+    float: left;
+        float: left;
+        /* margin-left: 101px; */
+        width: 167px;
+        text-align: center;
+        font-size: 13px;
+        height: 38px;
+        cursor: pointer;
+    
+}
+.logo_t {
+    width: 1200px;
+    height: 182px;
+    /* height: 0px; */
+    position: absolute;
+    left: 50%;
+    margin-left: -600px;
+    /* margin-top: -3px; */
+    top: 38px;
+    background-color: #fff;
+    font-size: 13px;
+    display: none;
+    color: #343434;
+}
+.top_a1 {
+    width: 224px;
+    height: 160px;
+    position: absolute;
+    margin-top: 20px;
+    /* margin-left: 300px; */
+    margin-left: 103px;
+    text-align: center;
+    cursor: pointer;
+}
+.logo_t img {
+    border: 0;
+    float: left;
+}
+.top_a1_p1 {
+    position: absolute;
+    margin-top: 100px;
+    width: 100%;
+}
+.top_a1_p2 {
+    position: absolute;
+    margin-top: 125px;
+    width: 100%;
+}
+.top_a2 {
+    width: 224px;
+    height: 160px;
+    position: absolute;
+    margin-top: 20px;
+    /* margin-left: 676px; */
+    margin-left: 486px;
+    text-align: center;
+    cursor: pointer;
+}
+.top_a3 {
+    width: 224px;
+    height: 160px;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 864px;
+    text-align: center;
+    cursor: pointer;
+}
+a {
+    color: #000;
+}
+.logo_t a:hover {
+    color: #9d7f62;
+}
+.cur{
+    border-bottom: 2px solid #943042;
+    padding-bottom:2px; 
+    margin-bottom: -2px;
+}
+.logo_t span {
+    position: absolute;
+    margin-left: 335px;
+    margin-top: 50px;
+    line-height: 25px;
+    font-size: 15px;
+}
+.logo_t ul {
+    position: absolute;
+    margin-top: 55px;
+    width: 610px;
+}
+.logo2 ul {
+    width: 1200px;
+    left: 50%;
+    margin-left: -600px;
+    position: absolute;
+    line-height: 41px;
+}
+.logo_t_i1 {
+    position: absolute;
+    /* margin-left: 663px; */
+    margin-top: 15px;
+}
+.foot {
+    width: 100%;
+    background: #f1f1f1;
+    float: left;
+    color: #000;
+    height: 515px;
+    margin-top: 50px;
+    border-top: 1px solid #ccc;
+}
+.foot1 {
+    position: absolute;
+    width: 1200px;
+    height: 284px;
+    font-size: 13px;
+    margin-left: -600px;
+    left: 50%;
+}
+.foot1 ul {
+    width: 100px;
+    float: left;
+    margin-left: 7%;
+    margin-top: 45px;
+    line-height: 32px;
+    cursor: pointer;
+}
+.foot1 li {
+    float: none;
+    color: #7c7c7c;
+}
+.foot_li1 {
+    /* font-weight: bold; */
+    font-size: 16px;
+    color: #575757 !important;
+}
+.foot_top {
+    position: absolute;
+    right: 2%;
+    width: 180px;
+    height: 100px;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 120px;
+    cursor: pointer;
+    color: #575757 !important;
+}
+.foot_top div {
+    width: 100%;
+    height: 18px;
+}
+.foot_top img {
+    margin-left: 78px;
+}
+.foot0 {
+    background: #ccc;
+    height: 1px;
+    width: 100%;
+    margin-top: 284px;
+}
+.foot2 {
+    position: absolute;
+    width: 1200px;
+    font-size: 11px;
+    line-height: 18px;
+    margin-left: -600px;
+    left: 50%;
+    color: #575757 !important;
+}
+.foot2_1 {
+    width: 670px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    margin-left: -335px;
+    margin-top: 30px;
+}
+.ewm {
+    width: 273px;
+    height: 283px;
+    position: absolute;
+    margin-top: -300px;
+    margin-left: 210px;
+    display: none;
+}
+.foot2_1p {
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 245px;
+    cursor: pointer;
+}
+.foot2_2p {
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 191px;
+}
+.foot2_3p {
+    display: inline-block;
+    margin-left: 284px;
+}
+.foot2_1 a {
+    color: #575757 !important;
+}
+.foot1 li:hover {
+    color: #9d7f62;
+}
+.foot_top div {
+    width: 100%;
+    height: 18px;
+}
+.foot img {
+    border: 0;
+    float: left;
+}
+/* ---------------------end----------------------------------------- */
 .m {
     width: 1200px;
     float: left;
@@ -19,7 +260,7 @@ a {
 }
 .banner {
     width: 100%;
-    margin-top: 120px;
+    /* margin-top: 120px; */
     float: left;
     background: rgb(0, 0, 0,0);
     height: 738px;
