@@ -1,3 +1,19 @@
+.m {
+    width: 1200px;
+    float: left;
+    overflow: hidden;
+    margin-top: 50px;
+    color: rgb(53,53,53);
+}
+a:link, a:visited, a:active, a:hover {
+    text-decoration: none;
+}
+a {
+    border: 0;
+}
+a {
+    color: #000;
+}
 .banner {
     width: 100%;
     margin-top: 120px;
@@ -7,4 +23,39 @@
 }
 .banner img{
     width: 100%;
+}
+.main {
+    width: 100%;
+    float: left;
+}
+.mainD {
+    width: 1200px;
+    margin: 0 auto;
+}
+.m1 {
+    width: 1200px;
+    float: left;
+    overflow: hidden;
+    margin-top: 15px;
+}
+.m1_title1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+.m1_title2 {
+    font-size: 17px;
+    margin-top: 2px;
+    font-weight: bold;
+}
+.m1_title3 {
+    font-size: 14px;
+    margin-top: 22px;
+}
+.m1_line {
+    height: 3px;
+    width: 1200px;
+    background: #e2e2e2;
+    margin-top: 15px;
+    float: left;
 }
