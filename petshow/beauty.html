@@ -102,12 +102,17 @@
 				var rate = (A + B) / C;
 				if(rate > 0.7){
 					self.phpnum++;
-					
-					 var nwf = new Student(self.phpnum,1)
+					if (self.phpnum<=3) {
+            var nwf = new Student(self.phpnum,1)
+          }else{
+            self.lock = false;
+          };
+					 
 					//关锁
 					self.lock = false;
 				}
-	});
+
+	     });
 
         
     }
