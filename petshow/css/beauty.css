@@ -1,0 +1,357 @@
+/*-------------------beauty-common--------------------*/
+/*! Amaze UI v2.4.2 | by Amaze UI Team | (c) 2015 AllMobilize, Inc. | Licensed under MIT | 2015-07-06T10:25:45+0800 */.ath-viewport,html {
+	-webkit-tap-highlight-color: transparent
+}
+
+body,sub,sup {
+	position: relative
+}
+
+abbr[title],dfn[title] {
+	border-bottom: 1px dotted
+}
+
+b,dt,optgroup,strong {
+	font-weight: 700
+}
+
+hr,legend,td,th {
+	padding: 0
+}
+
+address,dfn[title] {
+	font-style: normal
+}
+
+hr,iframe,img,legend {
+	border: 0
+}
+
+.am-btn,button,img,input:not([type=radio]):not([type=checkbox]),select {
+	vertical-align: middle
+}
+
+.am-container,.am-g-fixed {
+	max-width: 1000px
+}
+
+.am-container:after,.am-g:after,[class*=am-avg-]:after {
+	clear: both
+}
+
+.am-table,table {
+	border-spacing: 0
+}
+
+*,:after,:before {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box
+}
+
+body,html {
+	min-height: 100%
+}
+
+html {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	font-size: 10px
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary {
+	display: block
+}
+
+audio,canvas,progress,video {
+	display: inline-block;
+	vertical-align: baseline
+}
+a {
+	background-color: transparent;
+	color: #0e90d2
+}
+
+a:active,a:hover {
+	outline: 0
+}
+
+a,ins {
+	text-decoration: none
+}
+
+q {
+	quotes: "\201C" "\201D" "\2018" "\2019"
+}
+
+small {
+	font-size: 80%
+}
+
+sub,sup {
+	font-size: 75%;
+	line-height: 0;
+	vertical-align: baseline
+}
+
+sup {
+	top: -.5em
+}
+
+sub {
+	bottom: -.25em
+}
+
+img {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box
+}
+
+svg:not(:root) {
+	overflow: hidden
+}
+
+fieldset {
+	padding: .35em .625em .75em
+}
+
+button,input,optgroup,select,textarea {
+	color: inherit;
+	font: inherit;
+	margin: 0
+}
+
+body,pre {
+	line-height: 1.6
+}
+
+button {
+	overflow: visible
+}
+
+button,input {
+	line-height: normal
+}
+
+button,select {
+	text-transform: none
+}
+
+button,html input[type=button],input[type=reset],input[type=submit] {
+	-webkit-appearance: button;
+	cursor: pointer
+}
+
+input[type=checkbox],input[type=radio] {
+	cursor: pointer;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box
+}
+
+button[disabled],html input[disabled] {
+	cursor: default
+}
+
+button::-moz-focus-inner,input::-moz-focus-inner {
+	border: 0;
+	padding: 0
+}
+
+input[type=search] {
+	-webkit-appearance: textfield
+}
+
+input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration {
+	-webkit-appearance: none
+}
+
+textarea {
+	overflow: auto;
+	vertical-align: top;
+	resize: vertical
+}
+
+body {
+	margin: 0;
+	background: #fff;
+	font-family: "Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSans,Arimo,"Droid Sans","wenquanyi micro hei","Hiragino Sans GB","Hiragino Sans GB W3",FontAwesome,sans-serif;
+	font-weight: 400;
+	color: #333;
+	font-size: 1.6rem
+}
+
+body,button,input,select,textarea {
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-moz-font-feature-settings: "liga","kern"
+}
+
+a:focus,a:hover {
+	color: #095f8a
+}
+
+a:focus {
+	outline: dotted thin;
+	outline: -webkit-focus-ring-color auto 1px;
+	outline-offset: -2px
+}
+
+ins,mark {
+	background: #ffa;
+	color: #333
+}
+
+abbr[title],dfn[title] {
+	cursor: help
+}
+
+address,blockquote,dl,fieldset,figure,hr,ol,p,pre,ul {
+	margin: 0 0 1.6rem
+}
+
+*+address,*+blockquote,*+dl,*+fieldset,*+figure,*+hr,*+ol,*+p,*+pre,*+ul {
+	margin-top: 1.6rem
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0 0 1.6rem;
+	font-weight: 600;
+	font-size: 100%
+}
+
+h1 {
+	font-size: 1.5em
+}
+
+h2 {
+	font-size: 1.25em
+}
+
+*+h1,*+h2,*+h3,*+h4,*+h5,*+h6 {
+	margin-top: 2em
+}
+
+ol,ul {
+	padding-left: 2em
+}
+
+ol>li>ol,ol>li>ul,ul>li>ol,ul>li>ul {
+	margin: 1em 0
+}
+
+dt+dd {
+	margin-top: .5em
+}
+
+dd {
+	margin-left: 0
+}
+
+dd+dt {
+	margin-top: 1em
+}
+
+hr {
+	display: block;
+	height: 0;
+	border-top: 1px solid #eee;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+}
+/*----------------end----------------------------------------*/
+.pet_content{
+	padding-top: 49px;
+	background: #e8e8e8;
+	max-width: 100%;
+	display: flex;
+	justify-content:space-around;
+}
+.pet_content .inner_shell{
+	background: #fff;
+	overflow: hidden;
+	width: 90%;
+	border:1px solid;
+}
+.pet_content .inner_shell ul{
+	max-width: 100%;
+	display: flex;
+	flex-direction:column;
+	padding: 0;
+}
+.pet_content .inner_shell ul li.am-items{
+	display: flex;
+	width: 100%;
+	box-sizing:border-box;
+	overflow: hidden;
+	flex-direction:row;
+	justify-content:space-between;
+	margin:0 0 1.75rem 0;
+	border-bottom: 1px solid #f1f1f1;
+	padding: 0 0 1.38rem 0;
+}
+.pet_content li.am-items .textbox{
+	width: 66.84%;
+	position: relative;
+	
+}
+.pet_content li.am-items .imgbox{
+	width: 30.12%;
+	position: relative;
+}
+.pet_content li.am-items .imgbox::before{
+	content: "";
+	width: 100%;
+	height: 7.2rem;
+	display: block;
+	background: url(../images/lodbg.jpg);
+	background-size: cover;
+}
+.pet_content li.am-items .imgbox .lodbg{
+	width: 100%;
+	position: relative;
+	
+}
+.pet_content li.am-items .textbox h3{
+	font-size: 100%;
+    line-height: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+.pet_content li.am-items .textbox h3 a{
+	color: #222;
+}
+.pet_content li.am-items .textbox .address{
+	width: 100%;
+	position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    line-height: 1.3em;
+    -webkit-line-clamp: 2;
+    max-height: 2.6em;
+    display: flex;
+    flex-direction:column;
+}
+.pet_content li.am-items .textbox .address>span{
+	color: #a3a3a3;
+	font-size: 12px;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    line-height: 1.3em;
+    -webkit-line-clamp: 1;
+    max-height: 1.3em;
+}
+.pet_content li.am-items .imgbox img{
+	width: 100%;
+	position: absolute;
+	top: 0;left: 0;
+	z-index: 6;
+}
