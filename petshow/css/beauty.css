@@ -6,7 +6,9 @@
 body,sub,sup {
 	position: relative
 }
-
+body{
+	background: #fff;
+}
 abbr[title],dfn[title] {
 	border-bottom: 1px dotted
 }
@@ -290,8 +292,8 @@ header .jiantou{
 
 /* ---------------end----------------------------------------- */
 .pet_content{
-	padding-top: 49px;
-	background: #e8e8e8;
+	padding-top: 1.5rem;
+	/*background: #e8e8e8;*/
 	max-width: 100%;
 	display: flex;
 	justify-content:space-around;
