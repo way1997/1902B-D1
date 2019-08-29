@@ -6,15 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/beauty.css">
+  <link rel="stylesheet" type="text/css" href="css/iconfont.css">
     <title>美容</title>
     <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
     <script type="text/javascript" src="js/jquery.lazyload.min.js"></script>
 </head>
 <body>
+        <header>
+            <a href=" " class="iconfont jiantou">&#xe647</a>
+            <h3>新鲜事</h3>
+            <a href="#" class="iconfont">&#xe670</a>
+        </header>
    <div class="pet_content">
    		<div class="inner_shell">
    			<ul id="tabebox">
-   				<li class="am-items">
+   				<!-- <li class="am-items">
    					<div class="textbox">
    						<h3>
    							<a href="javascript:;" class="">蓝诺宠物 (宠爱旗舰店)</a>
@@ -27,7 +33,7 @@
    					<div class="imgbox">
    						<a href="javascript:;"><img class="lazy" data-original="images/shitu.jpg" alt=""></a>
    					</div>
-   				</li>
+   				</li> -->
    			</ul>
    		</div>
    </div>
@@ -37,7 +43,7 @@
 		<li class="am-items">
    			<div class="textbox">
    				<h3>
-   					<a href="javascript:;" class=""><%=name%></a>
+   					<a href="<%=source%>" class=""><%=name%></a>
    				</h3>
    				<div class="address">
    					<span class="way"><%=district%> <%=formatted_address%></span>
@@ -45,8 +51,8 @@
    				</div>
    			</div>
    			<div class="imgbox">
-   				<a href="javascript:;">
-   					<img class="lazy" data-original="<%=picture%>" alt="">
+   				<a href="<%=source%>">
+   					<img class="lazy" data-original="<%=picture%>" >
    				</a>
    			</div>
    		</li>
