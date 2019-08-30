@@ -102,6 +102,33 @@ header{
     font-size: 0.426667rem;
 }
 /* --------------------end------------------- */
+/* yincang */
+
+.yincang{
+    z-index: 66;
+    margin: 0 auto;
+    max-width: 10rem;
+    position: absolute;
+    left: 1.22rem;
+    top:1.173333rem;
+    background:#fff;
+    margin: 0.053333rem 0.026667rem;
+    display: none;
+}
+.yincang ul{
+    width:100%;
+    overflow: hidden;
+}
+.yincang ul li{
+    float:left;
+    overflow: hidden;
+    margin: 0.16rem 0.306667rem;
+    font-size: 0.4rem;
+}
+.yincang ul li a{
+    font-family: PingFangSC-Regular;
+    color: #1a1a1a;
+}
 /* contant */
 .contant{
     margin: 0;

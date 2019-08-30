@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/jquery-1.12.3.min.js"></script>
+    <script src="js/jquery.lazyload.min.js"></script>
     <link rel="stylesheet" href="css/reset.css">
-    <!-- <link rel="stylesheet" href="css/head.css"> -->
     <link rel="stylesheet" href="css/cartoons.css">
-    <title>Document</title>
+    <title>大鱼漫画</title>
 </head>
 <body>
     <!-- mokuai1 -->
@@ -20,6 +21,44 @@
             <a href="#" class="logo2" id="logo2"></a>
         </div>
     </header>
+    <div class="yincang">
+        <ul>
+            <li><a href="javascript:;">资讯</a></li>
+            <li><a href="javascript:;">娱乐</a></li>
+            <li><a href="javascript:;">财经</a></li>
+            <li><a href="javascript:;">军事</a></li>
+            <li><a href="javascript:;">科技</a></li>
+            <li><a href="javascript:;">体育</a></li>
+            <li><a href="javascript:;">小说</a></li>
+            <li><a href="javascript:;">房产</a></li>
+            <li><a href="javascript:;">汽车</a></li>
+            <li><a href="javascript:;">视频</a></li>
+            <li><a href="javascript:;">大风号</a></li>
+            <li><a href="javascript:;">时尚</a></li>
+            <li><a href="javascript:;">历史</a></li>
+            <li><a href="javascript:;">台湾</a></li>
+            <li><a href="javascript:;">港澳</a></li>
+            <li><a href="javascript:;">图片</a></li>
+            <li><a href="javascript:;">彩票</a></li>
+            <li><a href="javascript:;">游戏</a></li>
+            <li><a href="javascript:;">直播</a></li>
+            <li><a href="javascript:;">评论</a></li>
+            <li><a href="javascript:;">公益</a></li>
+            <li><a href="javascript:;">旅游</a></li>
+            <li><a href="javascript:;">美食</a></li>
+            <li><a href="javascript:;">健康</a></li>
+            <li><a href="javascript:;">VIP</a></li>
+            <li><a href="javascript:;">佛教</a></li>
+            <li><a href="javascript:;">文化</a></li>
+            <li><a href="javascript:;">国学</a></li>
+            <li><a href="javascript:;">智库</a></li>
+            <li><a href="javascript:;">社会</a></li>
+            <li><a href="javascript:;">NBA</a></li>
+            <li><a href="javascript:;">梧桐汇</a></li>
+            <li><a href="javascript:;">二手房</a></li>
+            <li><a href="javascript:;">有声</a></li>
+        </ul>
+    </div>
     <!-- mokuai2 -->
     <div class="carbox">
        
@@ -36,8 +75,9 @@
                </ul> 
             </div>
         </section>
+        <!-- neirong -->
         <main class="contant">
-            <ul>
+            <ul id="itembox">
                 <li class="car-items listpd">
                     <div class="textbox">
                         <h4>
@@ -59,4 +99,105 @@
         </main>
     </div>
 </body>
+<script>
+    var cc = 0;
+    $("#logo2").click(function(){
+        cc++;
+        if(cc % 2 !=0){
+            $(".yincang").css("display","block");
+        }else{
+            $(".yincang").css("display","none");
+        }
+    })
+</script>
+<script src="js/underscore-min.js"></script>
+<script type="text/template" id="template">
+    <li class="car-items listpd">
+        <div class="textbox">
+            <h4>
+                <a href="javascript:;">
+                    <%=title%>
+                </a>
+            </h4>
+            <p class="text-p">
+                <span class="p-mrsp"><%=news%></span>
+                <span class="p-mrsp"><%=coments%></span>
+                <time><%=time%></time>
+            </p>
+        </div>
+        <a href="javascript:;" class="imgbox">
+            <img src="<%=picture%>" alt="">
+        </a>
+    </li>
+</script>
+<script type="text/javascript">
+    function Student(phpnum,pageNumber,row){
+       this.pageNav = null;
+       this.pageNumber = pageNumber; 
+       this.phpnum = phpnum;
+       this.row = row;
+       this.lock = true;
+       this.getStudent(this.phpnum,this.pageNumber,this.row);
+       this.$dom = null;
+       this.bindEvent();
+      
+   }
+   Student.prototype.getStudent=function(phpnum,pageNumber,pagrow){
+       // console.log(phpnum)
+       var self = this;
+       $.get("php/"+phpnum+".php?page=" + pageNumber + "&pagesize="+pagrow,function(data){ 
+           //转为对象
+           var dataobj = typeof data == "object" ? data : eval("(" + data + ")");
+        //    console.log(dataobj.result);
+           //数组
+           var list = dataobj.result;
+           //遍历字典，组建DOM上树
+        //    console.log(list)
+           _.each(list,function(dictionary){
+             new Feed(dictionary);
+           });
+       });
+   }
+   //Feed类
+   function Feed(dictionary) {
+       this.template_str = $("#template").html();
+       var template_compiled = _.template(this.template_str);
+       this.$dom = $(template_compiled(dictionary));
+       $(".lazy").lazyload();
+       $("#itembox").append(this.$dom);
+       
+
+   }
+
+   Student.prototype.bindEvent = function(){
+       var self = this;
+       //加载
+      $(window).scroll(function(){
+                  if (!self.lock) { return };
+                 
+               var A = $(window).scrollTop();
+               var B = $(window).height();
+               var C = $(document).height();
+               var rate = (A + B) / C;
+               if(rate > 0.7){
+                
+                   self.pageNumber++;
+                //    console.log(self.pageNumber)
+                   if (self.pageNumber<=40) {
+          var of = new Student(1,self.pageNumber,5)
+         }else{
+           self.lock = false;
+         };
+                    
+                   //关锁
+                   self.lock = false;
+               }
+
+        });
+
+       
+   }
+
+   var wf = new Student(1,1,10);
+</script>
 </html>
