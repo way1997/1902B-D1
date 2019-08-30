@@ -10,7 +10,7 @@
 	//计算跳过多少条
 	$skip = $pagesize * ($page - 1);
 	//本次SQL语句
-	$sql = "SELECT * FROM xinshidai ORDER BY id  LIMIT {$skip},{$pagesize}";
+	$sql = "SELECT * FROM xinshidai ORDER BY id desc LIMIT {$skip},{$pagesize}";
 	//本次所有结果
 	$result = mysql_query($sql);
 
