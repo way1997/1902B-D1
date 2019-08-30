@@ -1,0 +1,49 @@
+body,
+dl,
+dd,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media screen and (max-width: 812px) {
+  html {
+    font-size: 10vw !important;
+  }
+}
+
+body {
+  background: #f7f7f7;
+  color: #2b2b2b;
+}
+
+a {
+  text-decoration: none;
+}
+
+.article-edit-mode {
+  font-size: 37.5px !important;
+}
+
+.clear {
+  clear: both;
+}
+
+.clearfix:after {
+  content: '\200B';
+  display: block;
+  height: 0;
+  clear: both;
+}
